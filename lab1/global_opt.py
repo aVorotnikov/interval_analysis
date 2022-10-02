@@ -55,7 +55,7 @@ def himmelblau1(x, y):
 
 mid = np.ones(2)
 rad = np.ones(2) * 2
-y_opt, list = glob_opt(rastrigin, 1, ip.Interval(mid, rad, midRadQ=True))
+y_opt, list = glob_opt(rastrigin, 0.01, ip.Interval(mid, rad, midRadQ=True))
 
 x, y = np.mgrid[-2:2:100j, -2:2:100j]
 z = rastrigin1(x, y)
@@ -91,7 +91,7 @@ plt.show()
 
 mid = np.ones(2)
 rad = np.ones(2) * 2
-y_opt, list = glob_opt(himmelblau, 1, ip.Interval(mid, rad, midRadQ=True))
+y_opt, list = glob_opt(himmelblau, 0.01, ip.Interval(mid, rad, midRadQ=True))
 
 x, y = np.mgrid[-4:4:400j, -4:4:400j]
 z = himmelblau1(x, y)

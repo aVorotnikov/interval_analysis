@@ -90,7 +90,7 @@ plt.show()
 
 
 mid = np.ones(2)
-rad = np.ones(2) * 2
+rad = np.ones(2) * 3
 y_opt, list = glob_opt(himmelblau, 0.01, ip.Interval(mid, rad, midRadQ=True))
 
 x, y = np.mgrid[-4:4:400j, -4:4:400j]
